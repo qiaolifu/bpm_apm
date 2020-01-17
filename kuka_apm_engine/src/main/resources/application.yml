@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/flowable?characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+flowable:
+  common:
+    app:
+      idm-url: http://localhost:8080/flowable-idm
+      idm-admin:
+        user: admin
+        password: test
+
+mybatis:
+  mapper-locations: classpath:/META-INF/modeler-mybatis-mappings/*.xml
+  configuration-properties:
+    blobType: BLOB
+    boolValue: TRUE
+    prefix:
